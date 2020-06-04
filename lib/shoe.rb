@@ -6,7 +6,11 @@ BRANDS = []
 
   def initialize(brand)
     @brand = brand
-        BRANDS << brand unless BRANDS.include?(brand)
+    BRANDS.each do |listed_brand|
+      if listed_brand != brand
+        BRANDS << brand
+      end
+    end
   end
 
   def cobble
