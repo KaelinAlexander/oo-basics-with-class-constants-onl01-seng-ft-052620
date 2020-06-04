@@ -7,8 +7,10 @@ BRANDS = []
   def initialize(brand)
     @brand = brand
     BRANDS.each do |listed_brand|
-      if listed_brand != brand
-        BRANDS << brand 
+      if listed_brand == brand
+        listed_brand = brand
+      else
+        BRANDS << brand
       end
     end
   end
