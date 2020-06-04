@@ -6,8 +6,8 @@ BRANDS = []
 
   def brand=(brand)
     @brand = brand
-    BRANDS.each do |list_brand|
-      if list_brand != brand
+    BRANDS.each do |listed_brand|
+      if listed_brand != brand
         BRANDS << brand 
       end
     end
