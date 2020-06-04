@@ -10,6 +10,7 @@ BRANDS = []
       if list_brand != brand
         BRANDS << brand 
       end
+    end
   end
 
   def cobble
