@@ -2,8 +2,14 @@ class Shoe
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand
 
-  def initialize(brand)
+BRANDS = []
+
+  def brand=(brand)
     @brand = brand
+    BRANDS.each do |list_brand|
+      if list_brand != brand
+        BRANDS << brand 
+      end
   end
 
   def cobble
