@@ -6,6 +6,9 @@ BRANDS = []
 
   def brand=(brand)
     @brand = brand
+  end 
+  
+  def brand_check
     BRANDS.each do |listed_brand|
       if listed_brand != brand
         BRANDS << brand 
